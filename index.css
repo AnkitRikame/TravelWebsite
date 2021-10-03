@@ -82,7 +82,7 @@ span {
 	zoom: 1;
 	display: inline;
 	margin: 5px;
-	padding: 15px 20px;
+	padding: 16px 22px;
 	font-size: 20px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -728,6 +728,9 @@ textarea {
 	section {
 		max-width: 90vw !important;
 	}
+	.LogoName {
+		font-size: 1.3em !important;
+	}
 	textarea {
 		width: 100% !important;
 	}
@@ -788,9 +791,10 @@ textarea {
 	}
 	.card {
 		min-width: 30rem;
+		padding: 6px 5px;
 	}
 	.container_Card {
-		padding: 2em 0em;
+		/* padding: 2em 0em; */
 	}
 	.card-horizontal {
 		margin: 0px;
@@ -885,6 +889,9 @@ textarea {
 		display: block;
 		width: 90%;
 	}
+	/* .footer-links {
+		padding-top: 55px !important;
+	} */
 }
 /* Media Query Ends here  */
 /* Css ends here */
