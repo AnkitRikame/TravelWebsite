@@ -1,924 +1,890 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  /* Global styling Variables */
-  :root {
-    --mainorangecolor: rgb(240, 109, 62);
-    --mainorangefade: rgb(240, 134, 96);
-    --maingraybackground: rgb(243, 240, 240);
-    --whitecolor: #fff;
-    --blackcolor: #000;
-    --newsletterpurplebackground: rgb(82, 43, 82);
-    --h2fontsize: 2rem;
-  }
-
-  a {
-    text-decoration: none !important;
-    color: #000;
-  }
-
-  section {
-    max-width: 80vw;
-    margin: auto;
-  }
-
-  span {
-    font-weight: 900;
-  }
-
-  .dropdown-menu>li>a:hover {
-    background-color: var(--whitecolor) !important;
-    color: var(--mainorangecolor) !important;
-  }
-
-
-  .carousel-control-prev-icon{
-    background-color: #000;
-    border-radius: 20px;
-    color: #000 !important;
-    padding: 20px 20px;
-    background-color: #000;
-  }
-
-  .carousel-control-next-icon{
-    background-color: #000;
-    border-radius: 20px;
-    color: #000 !important;
-    padding: 20px 20px;
-    background-color: #000;
-  }
-  /*  */
-  .navbar {
-    position: fixed;
-    width: 100%;
-  }
-
-  .navbar-brand {
-    padding-left: 7%;
-  }
-
-  .sectionOneNavbar .logo {
-    object-fit: contain;
-    width: 60px;
-  }
-
-  .nav-link {
-    outline: none !important;
-    text-transform: uppercase;
-    color: var(--blackcolor) !important;
-  }
-
-  .nav-item a:hover {
-    transition: 0, 2s ease-out;
-    color: var(--mainorangefade) !important;
-  }
-
-  .owl-pagination {
-    display: none;
-  }
-
-  .owl-theme .owl-controls .owl-buttons div {
-    color: #FFF;
-    display: inline-block;
-    zoom: 1;
-    display: inline;
-    margin: 5px;
-    padding: 15px 20px;
-    font-size: 20px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    background: #999b9b;
-    opacity: .5;
-  }
-
-  .owl-carousel .owl-item img {
-    display: block;
-    width: 600px;
-    float: left;
-    border-radius: 5px;
-    margin-left: 54px;
-    margin-right: 35px;
-    margin-top: 15px;
-  }
-
-  #testimonial-slider {
-    /* padding-top: 10%; */
-  }
-
-  .testimonial-item.equal-height.style-6 {
-    background-color: #eee;
-    border-radius: 5px;
-    margin: 0px;
-    margin-bottom: 10px;
-    height: 500px;
-    width: 100%;
-  }
-
-  .testimonial-item {
-    text-align: left;
-    padding-top: 2%;
-  }
-
-  .testimonial-heading h3 {
-    text-align: left;
-    font-weight: bold;
-    font-size: 2.5rem;
-  }
-
-  .testimonial-readmorebtn {
-    background-color: var(--mainorangecolor);
-    color: var(--whitecolor);
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 40px;
-  }
-
-  .testimonial-readmorebtn:hover {
-    background-color: var(--mainorangecolor);
-    color: var(--blackcolor);
-  }
-
-  .cell-right {
-    text-align: left;
-    margin-right: 80px;
-    padding-top: 35px;
-    padding-bottom: 20px;
-  }
-
-  .testimonial-name h2 {
-    font-weight: 600;
-    color: gray;
-    font-size: 2rem;
-  }
-
-  .testimonial-content.quote {
-    padding: 17px 55px;
-    color: var(--blackcolor);
-    display: block;
-  }
-
-  .et_right_sidebar #main-content .container:before {
-    display: none;
-  }
-
-  #main-content .container {
-    padding-top: 10px;
-  }
-
-  i.fa.fa-quote-left {
-    padding: 0px 10px;
-    color: #999;
-  }
-
-  /* Css starts here */
-
-  /* Css Section 1 Navbar Starts here */
-
-  .searchForm {
-    /* display: flex; */
-    margin: 0px 20px;
-    padding: 10px 20px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    border-radius: 10px;
-    background-color: var(--mainorangefade);
-  }
-
-  .searchForm i {
-    font-size: 20px;
-  }
-
-  .sectionOneNavbar {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .sectionOneTabs {
-    margin-left: 40%;
-  }
-
-  #searchiconmob {
-    display: none;
-  }
-
-  #searchicondesk {
-    display: block;
-  }
-
-  /* Css Section 1 Navbar Ends here */
-
-  /* Css Section 2 Slider Ends here */
-
-  #viewAllBtn1 {
-    display: block;
-  }
-
-  #viewAllBtn1Mob {
-    display: none;
-  }
-
-  #viewAllBtn2 {
-    display: block;
-  }
-
-  #viewAllBtn2Mob {
-    display: none;
-  }
-
-  #viewAllBtn3 {
-    display: block;
-  }
-
-  #viewAllBtn3Mob {
-    display: none;
-  }
-
-  /* .slider_MainDiv {
-      display: flex;
-      justify-content: space-around;
-      border: 6px solid rgb(0, 51, 128);
-  }
-
-  .slider_MainDivImage {
-      width: 50%; 
-      justify-content: space-evenly;
-      border: 6px solid green;
-  }
-
-  .slider_MainDivText {
-      width: 50%; 
-      ;justify-content: space-around;
-      border: 10px solid red;
-      margin-left: 100px;
-  } */
-
-  /* Css Section 2 Slider Ends here */
-
-  /* Css Section 3 starts here */
-
-  .container_Card {
-    margin: auto;
-    padding: 2em;
-    /* max-width: 68rem; */
-  }
-
-  .sectionThree_buttonDiv {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0px;
-    /* margin: 0px 20px; */
-  }
-
-  .sectionThree_button {
-    border-radius: 50px;
-    margin-right: 40px;
-    padding: 0px 40px;
-    font-weight: bold;
-    background: #fff;
-    color: var(--mainorangecolor);
-    box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
-    border: none;
-  }
-
-  .sectionThree_button:hover {
-    transition: 0.1s ease-in;
-    transform: scale(1.05);
-  }
-
-  .sectionfive_button:hover {
-    transition: 0.1s ease-in;
-    transform: scale(1.05);
-  }
-
-  .sectionSix_button:hover {
-    transition: 0.1s ease-in;
-    transform: scale(1.05);
-  }
-
-  .sectionThree_Card {
-    display: flex;
-    margin-top: 20px;
-    gap: 2em;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
-
-  .sectionThree_Card>* {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    min-width: 15rem;
-    max-width: calc(12.5rem + 13vw);
-    min-height: 25em;
-    height: auto;
-    padding-bottom: 30px;
-    background: #fff;
-    /* border-radius: 0.75e m; */
-    overflow: hidden;
-    box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
-    transition: transform 270ms ease;
-    position: relative;
-  }
-
-  .card::before {
-    content: '';
-    position: absolute;
-    display: flex;
-    inset: 0;
-    isolation: isolate;
-    mix-blend-mode: color;
-    /* background: linear-gradient(180deg, #0000 48%, 48%, red, 70%, blue); */
-    opacity: 0;
-  }
-
-  .card:hover::before {
-    opacity: 1;
-  }
-
-  .card:hover {
-    transform: scale(1.05);
-  }
-
-  img {
-    display: block;
-    max-width: 100%;
-    /* aspect-ratio: 16 / 9; */
-    object-fit: cover;
-    height: auto;
-    margin-bottom: 1em;
-  }
-
-  .card-body {
-    height: 200px;
-    padding: 1em 1.4em;
-  }
-
-  .card-body>h3 {
-    font-size: 1.5rem;
-    width: 100%;
-    font-weight: bold;
-    color: rgb(148, 148, 148);
-    /* text-align: left;
-      color: gray;
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem; */
-  }
-
-  .card-body>p {
-    color: #0009;
-    font-size: 1.3rem;
-    /* font-style: italic; */
-    font-weight: 700;
-    text-align: left;
-    /* margin: 1em auto; */
-    /* padding-inline: 0.5em; */
-    /* max-width: 35vw; */
-    width: auto;
-  }
-
-  .card-body>h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-  }
-
-  /* .container {
-      max-width: 75rem;
-      width: 100%;
-      padding: 4rem 2rem;
-      margin: 0 auto;
-  } */
-
-  /* Css Section 3 ends here */
-
-  /* Css Section 4 starts here */
-  .carousel-caption{
-    text-align: left;
-    position: absolute;
-    color: #000;
-    transform: translate(159%, -25%);
-  }
-
-  .carousel-caption h3{
-    color: gray;
-    font-size: 2rem;
-    text-align: left;
-  }
-
-
-  .carousel-caption h2{
-    text-align: left;
-  }
-
-  .carousel-caption p{
-    /* color: gray; */
-    text-align: left;
-  }
-  .sectionfourCarousel{
-    width: 45%;
-    padding: 25px 7px;
-    padding-left: 159px;
-  }
-  /* Css Section 4 ends here */
-
-  /* Css Section 5 starts here */
-
-  .card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-    margin: 20px 30px;
-    padding: 20px 30px;
-    background-color: snow;
-    box-shadow: 0 0.20em 0.6em #0005, 0 0.60em 1em #0004;
-    transition: transform 270ms ease;
-  }
-
-  .sectionfive_buttonDiv {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 30px;
-    /* margin: 0px 20px; */
-  }
-
-  .sectionfive_MainDiv {
-    display: flex;
-    padding-top: 5%;
-  }
-
-  .sectionfive_buttonDiv {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 30px;
-    /* margin: 0px 20px; */
-  }
-
-  .sectionfive_button {
-    border-radius: 50px;
-    margin-right: 40px;
-    padding: 0px 40px;
-    font-weight: bold;
-    background: #fff;
-    color: var(--mainorangecolor);
-    box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
-    border: none;
-  }
-
-  .sectionfive_buttonDiv1 {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0px;
-    /* margin: 0px 20px; */
-  }
-
-  .sectionfivePopularCards {
-    flex: 0.6;
-    /* background: rgb(218, 218, 218); */
-  }
-
-  .sectionfivePopularCards_White {
-    /* background-color: #fff; */
-    padding: 50px 10px;
-    border-radius: 30px;
-    margin: 20px 10px;
-    background: rgb(235, 234, 234);
-  }
-
-  .sectionfivePopularCards_Flex {
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  .sectionfivePopularCards_Flex img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .sectionfive_AskQuestion {
-    flex: 0.4;
-    margin-left: 20px;
-    /* border: 6px solid rgb(17, 0, 255); */
-  }
-
-  .sectionfive_AskQuestion__Keywords h2 {
-    color: var(--blackcolor);
-  }
-
-  .sectionfive_AskQuestion__Keywords {
-    font-weight: bold;
-    margin: 10px 10px;
-    margin-left: 0px;
-    padding: 10px 40px;
-    color: var(--mainorangecolor);
-    border: none;
-  }
-
-  .sectionfive_AskQuestion__Keywords:hover {
-    transition: 0.2s ease-in;
-    transform: scale(1.05);
-    background-color: var(--mainorangefade);
-    color: var(--whitecolor);
-  }
-
-  .card-horizontal_Text {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    /* justify-content: center; */
-  }
-
-  .card-horizontal_Text h4 {
-    font-size: 1.4rem;
-    font-weight: 700;
-  }
-
-  .card-horizontal_Text>h5 {
-    font-size: 1.5rem;
-    width: 100%;
-    font-weight: bold;
-    color: rgb(148, 148, 148);
-  }
-
-  .card-horizontal_Text p {
-    font-size: 1.3rem;
-    color: rgb(82, 79, 79);
-  }
-
-  /* Css Section 5 ends here */
-
-  /* Ask A question css starts here */
-
-  .sectionfive_AskQuestion__FirstDiv {
-    background-color: var(--newsletterpurplebackground);
-    color: var(--whitecolor);
-    text-align: center;
-    padding: 30px 10px;
-    margin-top: 20px;
-    border-radius: 5px;
-  }
-
-  .sectionfive_AskQuestion__SecondDiv {
-    background-color: var(--newsletterpurplebackground);
-    color: var(--whitecolor);
-    text-align: center;
-    margin-top: 30px;
-    padding: 30px 10px;
-    border-radius: 5px;
-  }
-
-  .sectionfive_AskQuestion__ThirdDiv {
-    margin-top: 50px;
-  }
-
-  .sectionfive_AskQuestion__FirstDiv h2, .sectionfive_AskQuestion__SecondDiv h2 {
-    font-size: var(--h2fontsize);
-    padding: 10px 90px;
-    /* line-height: 20px; */
-  }
-
-  .sectionfive_AskQuestion__SecondDiv p {
-    padding: 10px 80px;
-    font-size: rem;
-  }
-
-  textarea {
-    width: 80%;
-    border-radius: 5px;
-    border: none;
-  }
-
-  #sectionfive_AskQuestion__Email {
-    width: 80% !important;
-    padding: 10px 5px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: none;
-  }
-
-  .sectionfive_AskQuestion__Keywords {
-    color: var(--blackcolor);
-    /* background-color: var(--maingraybackground) !important; */
-  }
-
-  .sectionfive_AskQuestion__Submit {
-    width: 80%;
-    padding: 10px 10px;
-    border: none;
-    margin-top: 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    /* font-weight: bold; */
-    background-color: var(--mainorangecolor);
-    color: var(--whitecolor);
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .sectionfive_AskQuestion__Submit:hover {
-    background-color: rgb(236, 92, 40);
-    color: #000;
-  }
-
-  /* Ask A question css ends here */
-
-  /*  */
-
-  .sectionSixMainDiv {
-    padding: 30px 0px;
-  }
-
-  .sectionSix_button {
-    border-radius: 50px;
-    margin-right: 40px;
-    padding: 0px 40px;
-    font-weight: bold;
-    background: #fff;
-    color: var(--mainorangecolor);
-    box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
-    border: none;
-  }
-
-  /*  */
-
-  /* Footer css starts here */
-
-  .container_footer {
-    max-width: 80vw;
-    margin: auto;
-  }
-
-  .footer_HaveaQuestion {
-    background-color: var(--newsletterpurplebackground);
-    color: var(--whitecolor);
-    text-align: center;
-    padding: 30px 10px;
-  }
-
-  .container_footer>h6, .container_footer>p, .container_footer a {
-    color: #fff !important;
-  }
-
-  .site-footer {
-    background-color: #26272b;
-    /* padding:45px 0 20px; */
-    font-size: 15px;
-    padding: 50px 0px 20px 0px;
-    line-height: 24px;
-    color: #737373;
-  }
-
-  .site-footer hr {
-    border-top-color: #bbb;
-    opacity: 0.5
-  }
-
-  .site-footer hr.small {
-    margin: 20px 0
-  }
-
-  .site-footer h6 {
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 5px;
-    letter-spacing: 2px
-  }
-
-  .site-footer a {
-    color: #737373;
-  }
-
-  .site-footer a:hover {
-    color: var(--mainorangecolor) !important;
-    text-decoration: none;
-  }
-
-  .footer-links {
-    padding-left: 0;
-    list-style: none
-  }
-
-  .footer-links li {
-    display: block
-  }
-
-  .footer-links a {
-    color: #737373
-  }
-
-  .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
-    color: #3366cc;
-    text-decoration: none;
-  }
-
-  .footer-links.inline li {
-    display: inline-block
-  }
-
-  .site-footer .social-icons a {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: 6px;
-    margin-right: 0;
-    border-radius: 100%;
-    background-color: #33353d
-  }
-
-  .copyright-text {
-    margin: 0
-  }
-
-  @media (max-width:991px) {
-    .site-footer [class^=col-] {
-      margin-bottom: 30px
-    }
-  }
-
-  @media (max-width:767px) {
-    .site-footer {
-      padding-bottom: 0
-    }
-    .site-footer .copyright-text, .site-footer .social-icons {
-      text-align: center
-    }
-  }
-
-  @media (max-width:767px) {
-    .social-icons li.title {
-      display: block;
-      margin-right: 0;
-      font-weight: 600
-    }
-  }
-
-  /* Footer css ends here */
-
-  /* Css Section 5 ends here */
-
-  /* Media Query Starts here  */
-
-  @media (max-width: 780px) {
-    section {
-      max-width: 87vw !important;
-    }
-    .sectionOneTabs {
-      margin-left: 0px;
-    }
-    #searchiconmob {
-      display: block;
-    }
-    #searchicondesk {
-      display: none;
-    }
-    .testimonial-heading h3 {
-      font-size: 2.5rem;
-      padding: 10px 20px;
-      text-align: center;
-    }
-    .sectionOneNavbar .logo {
-      width: 50px;
-    }
-    .cell-right {
-      margin: auto !important;
-      text-align: center;
-    }
-    .testimonial-readmorebtn {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .testimonial-item.equal-height.style-6 {
-      height: auto;
-      padding: 20px 0px;
-    }
-    .owl-carousel .owl-item img {
-      margin-left: 0px;
-      margin-top: 0px;
-    }
-    .sectionOneNavbar {
-      justify-content: space-around;
-    }
-    .navbar-brand {
-      padding: 0px 0px !important;
-    }
-    /* .navbar-light .navbar-toggler {
-      margin-left: 40%;
-    } */
-    .testimonial-content.quote {
-      display: none;
-    }
-    .card {
-      min-width: 30rem;
-    }
-    .card-horizontal {
-      margin: 0px;
-      padding: 0px;
-      margin-top: 20px;
-      flex-direction: column;
-    }
-    .sectionfive_MainDiv {
-      display: block !important;
-    }
-    .sectionfivePopularCards {
-      flex: 1;
-    }
-    /*  */
-    .sectionThree_buttonDiv {
-      display: block;
-    }
-    .sectionThree_button {
-      display: block;
-      margin: auto;
-      padding: 11px 50px;
-    }
-
-    /*  */
-
-    .sectionfourCarousel{
-      width: 100%;
-      height: 550px;
-      padding-left: 0px;
-    }
-
-    .carousel-caption{
-      transform: translate(0%, -10%);
-    }
-
-    .carousel-caption{
-      text-align: center;
-    }
-  
-    .carousel-caption h3{
-      text-align: center !important;
-    }
-
-    .carousel-caption h2{
-      text-align: center !important;
-    }
-  
-    .carousel-caption p{
-      text-align: center !important;
-    }
-  
-    /*  */
-    /*  */
-    .sectionfive_MainDiv {
-      max-width: 95vw;
-    }
-    .card-horizontal_Text {
-      padding-left: 20px;
-      padding: 20px 20px;
-    }
-    .sectionfivePopularCards_White {
-      margin: 20px 0px !important;
-      padding: 10px 5px;
-    }
-    .sectionfive_AskQuestion__Keywords {
-      padding: 10px 5px !important
-    }
-    .sectionfive_AskQuestion__FirstDiv h2, .sectionfive_AskQuestion__SecondDiv h2 {
-      padding: 0px 0px;
-    }
-    .sectionfive_AskQuestion__SecondDiv p {
-      padding: 0px 0px;
-    }
-    #viewAllBtn1 {
-      display: none;
-    }
-    #viewAllBtn2 {
-      display: none;
-    }
-    #viewAllBtn3 {
-      display: none;
-    }
-    #viewAllBtn1Mob {
-      display: block;
-      width: 100%;
-    }
-    #viewAllBtn2Mob {
-      display: block;
-      width: 100%;
-    }
-    #viewAllBtn3Mob {
-      display: block;
-      width: 100%;
-    }
-  }
-
-  /* Media Query Ends here  */
-
-  /* Css ends here */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global styling Variables starts here */
+
+:root {
+	--mainorangecolor: #f57448;
+	--mainorangefade: rgb(240, 134, 96);
+	--maingraybackground: rgb(243, 240, 240);
+	--grayfontcolor: rgb(148, 148, 148);
+	--whitecolor: #fff;
+	--blackcolor: #000;
+	--newsletterpurplebackground: #5e3f5e;
+	--h2fontsize: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-shadow: none;
+}
+
+.carousel-caption p {
+	text-shadow: none;
+}
+
+a {
+	text-decoration: none !important;
+	color: #000;
+}
+
+section {
+	max-width: 80vw;
+	margin: auto;
+}
+
+span {
+	font-weight: 900;
+}
+
+.dropdown-menu > li > a:hover {
+	background-color: var(--whitecolor) !important;
+	color: var(--mainorangecolor) !important;
+}
+
+.carousel-control-prev-icon {
+	background-color: #000;
+	border-radius: 20px;
+	color: #000 !important;
+	padding: 20px 20px;
+	background-color: #000;
+}
+
+.carousel-control-next-icon {
+	background-color: #000;
+	border-radius: 20px;
+	color: #000 !important;
+	padding: 20px 20px;
+	background-color: #000;
+}
+/* Global styling Variables ends here */
+
+/* Carousel Css starts here */
+.nav-item a:hover {
+	transition: 0, 2s ease-out;
+	color: var(--mainorangefade) !important;
+}
+
+.owl-pagination {
+	display: none;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+	color: #fff;
+	display: inline-block;
+	zoom: 1;
+	display: inline;
+	margin: 5px;
+	padding: 15px 20px;
+	font-size: 20px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #999b9b;
+	opacity: 0.5;
+}
+
+.owl-carousel .owl-item img {
+	display: block;
+	width: 600px;
+	float: left;
+	border-radius: 5px;
+	margin-left: 54px;
+	margin-right: 35px;
+	margin-top: 15px;
+}
+
+#testimonial-slider {
+	/* padding-top: 10%; */
+}
+
+.testimonial-item.equal-height.style-6 {
+	background-color: #eee;
+	border-radius: 5px;
+	margin: 0px;
+	margin-bottom: 10px;
+	height: 500px;
+	width: 100%;
+}
+
+.testimonial-item {
+	text-align: left;
+	padding-top: 2%;
+}
+
+.testimonial-heading h3 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.testimonial-readmorebtn {
+	background-color: var(--mainorangecolor);
+	color: var(--whitecolor);
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 40px;
+}
+
+.testimonial-readmorebtn:hover {
+	background-color: var(--mainorangecolor);
+	color: var(--blackcolor);
+}
+
+.cell-right {
+	text-align: left;
+	margin-right: 80px;
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+
+.testimonial-name h2 {
+	font-weight: 900;
+	color: gray;
+	font-size: 2rem;
+}
+
+.testimonial-content.quote {
+	padding: 17px 55px;
+	color: var(--blackcolor);
+	display: block;
+}
+
+.et_right_sidebar #main-content .container:before {
+	display: none;
+}
+
+#main-content .container {
+	padding-top: 10px;
+}
+
+i.fa.fa-quote-left {
+	padding: 0px 10px;
+	color: #999;
+}
+
+/* Carousel css ends here */
+
+/* Css starts here */
+/* Css Section 1 Navbar Starts here */
+
+/* Section 1 Navbar starts here */
+.navbar {
+	position: fixed;
+	width: 100%;
+}
+
+.navbar-brand {
+	padding-left: 5%;
+}
+
+.sectionOneNavbar .logo {
+	object-fit: contain;
+	width: 60px;
+}
+
+.nav-link {
+	outline: none !important;
+	text-transform: uppercase;
+	color: var(--blackcolor) !important;
+}
+
+.searchForm {
+	/* display: flex; */
+	margin: 0px 20px;
+	padding: 10px 20px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	border-radius: 10px;
+	background-color: var(--mainorangefade);
+}
+
+.searchForm i {
+	font-size: 20px;
+}
+
+.sectionOneNavbar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sectionOneTabs {
+	margin-left: 40%;
+}
+
+#searchiconmob {
+	display: none;
+}
+
+#searchicondesk {
+	display: block;
+}
+/* Css Section 1 Navbar Ends here */
+
+/* Css Section 2 Slider Ends here */
+#viewAllBtn1 {
+	display: block;
+}
+
+#viewAllBtn1Mob {
+	display: none;
+}
+
+#viewAllBtn2 {
+	display: block;
+}
+
+#viewAllBtn2Mob {
+	display: none;
+}
+
+#viewAllBtn3 {
+	display: block;
+}
+
+#viewAllBtn3Mob {
+	display: none;
+}
+
+/* Css Section 2 Slider Ends here */
+
+/* Css Section 3 starts here */
+.container_Card {
+	margin: auto;
+	padding: 2em;
+}
+
+.sectionThree_buttonDiv {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 0px;
+}
+
+.sectionThree_button {
+	border-radius: 50px;
+	margin-right: 40px;
+	padding: 0px 40px;
+	font-weight: bold;
+	background: #fff;
+	color: var(--mainorangecolor);
+	box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
+	border: none;
+}
+
+.sectionThree_button:hover {
+	transition: 0.1s ease-in;
+	transform: scale(1.05);
+}
+
+.sectionfive_button:hover {
+	transition: 0.1s ease-in;
+	transform: scale(1.05);
+}
+
+.sectionSix_button:hover {
+	transition: 0.1s ease-in;
+	transform: scale(1.05);
+}
+
+.sectionThree_Card {
+	display: flex;
+	margin-top: 20px;
+	gap: 2em;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.sectionThree_Card > * {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	min-width: 15rem;
+	max-width: calc(12.5rem + 13vw);
+	min-height: 25em;
+	height: auto;
+	padding-bottom: 30px;
+	background: #fff;
+	overflow: hidden;
+	box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
+	transition: transform 270ms ease;
+	position: relative;
+}
+
+.card::before {
+	content: '';
+	position: absolute;
+	display: flex;
+	inset: 0;
+	isolation: isolate;
+	mix-blend-mode: color;
+	opacity: 0;
+}
+
+.card:hover::before {
+	opacity: 1;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	height: auto;
+	margin-bottom: 1em;
+}
+
+.card-body {
+	height: 200px;
+	padding: 1em 1.4em;
+}
+
+.card-body > h3 {
+	font-size: 1.5rem;
+	width: 100%;
+	font-weight: bold;
+	color: var(--grayfontcolor);
+}
+
+.card-body > p {
+	color: #0009;
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-align: left;
+	width: auto;
+}
+
+.card-body > h2 {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+/* Css Section 3 ends here */
+
+/* Css Section 4 starts here */
+.carousel-caption {
+	text-align: left;
+	position: absolute;
+	color: #000;
+	transform: translate(159%, -25%);
+}
+
+.carousel-caption h3 {
+	color: gray;
+	font-size: 2rem;
+	text-align: left;
+}
+
+.carousel-caption h2 {
+	text-align: left;
+}
+
+.carousel-caption p {
+	text-align: left;
+}
+
+.sectionfourCarousel {
+	width: 45%;
+	padding: 25px 7px;
+	padding-left: 159px;
+}
+/* Css Section 4 ends here */
+
+/* Css Section 5 starts here */
+.card-horizontal {
+	display: flex;
+	flex: 1 1 auto;
+	margin: 20px 30px;
+	padding: 20px 30px;
+	background-color: snow;
+	box-shadow: 0 0.2em 0.6em #0005, 0 0.6em 1em #0004;
+	transition: transform 270ms ease;
+}
+
+.sectionfive_buttonDiv {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px;
+}
+
+.sectionfive_MainDiv {
+	display: flex;
+	padding-top: 5%;
+}
+
+.sectionfive_button {
+	border-radius: 50px;
+	margin-right: 40px;
+	padding: 0px 40px;
+	font-weight: bold;
+	background: #fff;
+	color: var(--mainorangecolor);
+	box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
+	border: none;
+}
+
+.sectionfive_buttonDiv1 {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 0px;
+}
+
+.sectionfivePopularCards {
+	flex: 0.6;
+}
+
+.sectionfivePopularCards_White {
+	padding: 50px 10px;
+	border-radius: 30px;
+	margin: 20px 10px;
+	background: rgb(235, 234, 234);
+}
+
+.sectionfivePopularCards_Flex {
+	display: flex;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.sectionfivePopularCards_Flex img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.sectionfive_AskQuestion {
+	flex: 0.4;
+	margin-left: 20px;
+}
+
+.sectionfive_AskQuestion__Keywords h2 {
+	color: var(--blackcolor);
+}
+
+.sectionfive_AskQuestion__Keywords {
+	font-weight: bold;
+	margin: 10px 10px;
+	margin-left: 0px;
+	padding: 10px 40px;
+	color: var(--mainorangecolor);
+	border: none;
+}
+
+.sectionfive_AskQuestion__Keywords:hover {
+	transition: 0.2s ease-in;
+	transform: scale(1.05);
+	background-color: var(--mainorangefade);
+	color: var(--whitecolor);
+}
+
+.card-horizontal_Text {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+.card-horizontal_Text h4 {
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+.card-horizontal_Text > h5 {
+	font-size: 1.5rem;
+	width: 100%;
+	font-weight: bold;
+	color: var(--grayfontcolor);
+}
+
+.card-horizontal_Text p {
+	font-size: 1.3rem;
+	color: rgb(82, 79, 79);
+}
+
+/* Ask A question css starts here */
+.sectionfive_AskQuestion__FirstDiv {
+	background-color: var(--newsletterpurplebackground);
+	color: var(--whitecolor);
+	text-align: center;
+	padding: 30px 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.sectionfive_AskQuestion__SecondDiv {
+	background-color: var(--newsletterpurplebackground);
+	color: var(--whitecolor);
+	text-align: center;
+	margin-top: 30px;
+	padding: 30px 10px;
+	border-radius: 5px;
+}
+
+.sectionfive_AskQuestion__ThirdDiv {
+	margin-top: 50px;
+}
+
+.sectionfive_AskQuestion__FirstDiv h2,
+.sectionfive_AskQuestion__SecondDiv h2 {
+	font-size: var(--h2fontsize);
+	padding: 10px 90px;
+}
+
+.sectionfive_AskQuestion__SecondDiv p {
+	padding: 10px 80px;
+	font-size: 1.8rem;
+}
+
+textarea {
+	width: 80%;
+	border-radius: 5px;
+	border: none;
+}
+
+#sectionfive_AskQuestion__Email {
+	width: 80% !important;
+	padding: 10px 15px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.sectionfive_AskQuestion__Keywords {
+	color: var(--blackcolor);
+}
+
+.sectionfive_AskQuestion__Submit {
+	width: 80%;
+	padding: 10px 10px;
+	border: none;
+	margin-top: 10px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background-color: var(--mainorangecolor);
+	color: var(--whitecolor);
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.sectionfive_AskQuestion__Submit:hover {
+	background-color: rgb(236, 92, 40);
+	color: #000;
+}
+
+/* Css Section 5 ends here */
+
+/* Css Section 6 starts here */
+/* Ask A question css ends here */
+.sectionSixMainDiv {
+	padding: 30px 0px;
+}
+
+.sectionSix_button {
+	border-radius: 50px;
+	margin-right: 40px;
+	padding: 0px 40px;
+	font-weight: bold;
+	background: #fff;
+	color: var(--mainorangecolor);
+	box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
+	border: none;
+}
+/* Css Section 6 ends here */
+
+/* Footer css starts here */
+.container_footer {
+	max-width: 80vw;
+	margin: auto;
+}
+
+.footer_HaveaQuestion {
+	background-color: var(--newsletterpurplebackground);
+	color: var(--whitecolor);
+	text-align: center;
+	padding: 30px 10px;
+}
+
+.container_footer > h6,
+.container_footer > p,
+.container_footer a {
+	color: #fff !important;
+}
+
+.site-footer {
+	background-color: #26272b;
+	font-size: 15px;
+	padding: 50px 0px 20px 0px;
+	line-height: 24px;
+	color: #737373;
+}
+
+.site-footer hr {
+	border-top-color: #bbb;
+	opacity: 0.5;
+}
+
+.site-footer hr.small {
+	margin: 20px 0;
+}
+
+.site-footer h6 {
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+
+.site-footer a {
+	color: #737373;
+}
+
+.site-footer a:hover {
+	color: var(--mainorangecolor) !important;
+	text-decoration: none;
+}
+
+.footer-links {
+	padding-left: 0;
+	list-style: none;
+}
+
+.footer-links li {
+	display: block;
+}
+
+.footer-links a {
+	color: #737373;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+	color: #3366cc;
+	text-decoration: none;
+}
+
+.footer-links.inline li {
+	display: inline-block;
+}
+
+.site-footer .social-icons a {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 6px;
+	margin-right: 0;
+	border-radius: 100%;
+	background-color: #33353d;
+}
+
+.copyright-text {
+	margin: 0;
+}
+
+@media (max-width: 991px) {
+	.site-footer [class^='col-'] {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.site-footer {
+		padding-bottom: 0;
+	}
+	.site-footer .copyright-text,
+	.site-footer .social-icons {
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.social-icons li.title {
+		display: block;
+		margin-right: 0;
+		font-weight: 600;
+	}
+}
+/* Footer css ends here */
+
+/* Media Query Starts here  */
+@media (max-width: 780px) {
+	section {
+		max-width: 90vw !important;
+	}
+	textarea {
+		width: 100% !important;
+	}
+	#sectionfive_AskQuestion__Email {
+		width: 100% !important;
+	}
+	.sectionfive_AskQuestion__Submit {
+		width: 100% !important;
+	}
+	.searchForm {
+		margin: 0px 15px;
+		padding: 5px 14px;
+		height: 30px;
+		width: 45px;
+	}
+	.sectionOneTabs {
+		margin-left: 0px;
+	}
+	#searchiconmob {
+		display: block;
+	}
+	#searchicondesk {
+		display: none;
+	}
+	.testimonial-heading h3 {
+		font-size: 2.5rem;
+		padding: 10px 20px;
+		text-align: center;
+	}
+	.sectionOneNavbar .logo {
+		width: 50px;
+	}
+	.cell-right {
+		margin: auto !important;
+		text-align: center;
+	}
+	.testimonial-readmorebtn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.testimonial-item.equal-height.style-6 {
+		height: auto;
+		padding: 20px 0px;
+	}
+	.owl-carousel .owl-item img {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.sectionOneNavbar {
+		justify-content: space-around;
+	}
+	.navbar-brand {
+		padding: 0px 0px !important;
+	}
+	.testimonial-content.quote {
+		display: none;
+	}
+	.card {
+		min-width: 30rem;
+	}
+	.container_Card {
+		padding: 2em 0em;
+	}
+	.card-horizontal {
+		margin: 0px;
+		border-radius: 10px;
+		padding: 15px 15px;
+		margin-top: 20px;
+		flex-direction: column;
+	}
+	.sectionfive_MainDiv {
+		display: block !important;
+	}
+	.sectionfivePopularCards {
+		flex: 1;
+	}
+	/*  */
+	.sectionThree_buttonDiv {
+		display: block;
+	}
+	.sectionThree_button {
+		display: block;
+		margin: auto;
+		padding: 11px 50px;
+	}
+	/*  */
+	.sectionfourCarousel {
+		width: 100%;
+		height: 550px;
+		padding-left: 10px;
+	}
+	.carousel-caption {
+		transform: translate(0%, -10%);
+	}
+	.carousel-caption {
+		text-align: center;
+	}
+	.carousel-caption h3 {
+		text-align: center !important;
+	}
+	.carousel-caption h2 {
+		text-align: center !important;
+	}
+	.carousel-caption p {
+		text-align: center !important;
+	}
+	/*  */
+	/*  */
+	.sectionfive_buttonDiv {
+		margin-left: 5px;
+	}
+	.sectionfive_MainDiv {
+		max-width: 95vw;
+	}
+	.card-horizontal_Text {
+		padding-left: 20px;
+		padding: 10px 10px;
+	}
+	.sectionfivePopularCards_White {
+		margin: 20px 0px !important;
+		padding: 10px 5px;
+	}
+	.sectionfive_AskQuestion {
+		margin-left: 0px;
+	}
+	.sectionfive_AskQuestion__Keywords {
+		padding: 10px 5px !important;
+	}
+	.sectionfive_AskQuestion__FirstDiv h2,
+	.sectionfive_AskQuestion__SecondDiv h2 {
+		padding: 0px 0px;
+	}
+	.sectionfive_AskQuestion__SecondDiv p {
+		padding: 0px 0px;
+	}
+	#viewAllBtn1 {
+		display: none;
+	}
+	#viewAllBtn2 {
+		display: none;
+	}
+	#viewAllBtn3 {
+		display: none;
+	}
+	#viewAllBtn1Mob {
+		display: block;
+		width: 90%;
+	}
+	#viewAllBtn2Mob {
+		display: block;
+		width: 100%;
+	}
+	#viewAllBtn3Mob {
+		display: block;
+		width: 90%;
+	}
+}
+/* Media Query Ends here  */
+/* Css ends here */
