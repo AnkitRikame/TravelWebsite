@@ -64,6 +64,10 @@ span {
 	padding: 20px 20px;
 	background-color: #000;
 }
+
+.LogoName {
+	font-size: 1.2em;
+}
 /* Global styling Variables ends here */
 
 /* Carousel Css starts here */
@@ -326,7 +330,7 @@ i.fa.fa-quote-left {
 }
 
 .card::before {
-	content: '';
+	content: "";
 	position: absolute;
 	display: flex;
 	inset: 0;
@@ -587,7 +591,7 @@ textarea {
 }
 
 .sectionfive_AskQuestion__Submit:hover {
-	background-color: rgb(236, 92, 40);
+	background-color: var(--mainorangefade);
 	color: #000;
 }
 
@@ -703,7 +707,7 @@ textarea {
 }
 
 @media (max-width: 991px) {
-	.site-footer [class^='col-'] {
+	.site-footer [class^="col-"] {
 		margin-bottom: 30px;
 	}
 }
@@ -725,6 +729,12 @@ textarea {
 		font-weight: 600;
 	}
 }
+
+@media (max-width: 321px) {
+	.LogoName {
+		font-size: 1em !important;
+	}
+}
 /* Footer css ends here */
 
 /* Media Query Starts here  */
@@ -733,7 +743,7 @@ textarea {
 		max-width: 90vw !important;
 	}
 	.LogoName {
-		font-size: 1.3em !important;
+		font-size: 1.3em;
 	}
 	textarea {
 		width: 100% !important;
